@@ -1,0 +1,118 @@
+commit 8ec9cf842e7805f7d40df1e893ed8613c08c4a6c
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Mon Aug 26 04:07:18 2024 +0100
+
+    3 unit tests done
+
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.h
+M	Makefile
+M	SolverCG.cpp
+M	SolverCG.h
+M	unittests.cpp
+
+commit 64eb019108da884cff0bf27a90cf7e06e43d3829
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Sun Aug 25 22:17:51 2024 +0100
+
+    2 unit tests done
+
+M	LidDrivenCavity.cpp
+M	LidDrivenCavity.h
+M	Makefile
+M	SolverCG.cpp
+A	unittests.cpp
+
+commit 9846545dc138106ff244e4f9acbc4fb6006c8465
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Sun Aug 25 04:13:37 2024 +0100
+
+    Able to run 1 process
+
+M	LidDrivenCavity.cpp
+M	LidDrivenCavitySolver.cpp
+M	SolverCG.cpp
+
+commit 1b01a846ced42e0cd29117981051c34d4d9dbea4
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Sat Aug 24 22:44:21 2024 +0100
+
+    OpenMP 2nd commit
+
+M	LidDrivenCavity.cpp
+M	LidDrivenCavitySolver.cpp
+M	Makefile
+M	SolverCG.cpp
+M	SolverCG.h
+
+commit 8180e87e542dd0651b26fb82d301b0d3c6d7e59c
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Sat Aug 24 03:36:39 2024 +0100
+
+    OpenMP 1st commit
+
+M	LidDrivenCavity.cpp
+M	Makefile
+M	SolverCG.cpp
+
+commit 06e7199ee83ff57c4417418687ae60b8049de36b
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Thu Aug 22 19:16:10 2024 +0100
+
+    MPI done
+
+M	SolverCG.cpp
+
+commit aee22fc8d92f25b633d34dbd0940a7f8acca68c0
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Thu Aug 22 18:45:13 2024 +0100
+
+    6th commit
+
+M	SolverCG.cpp
+
+commit 797b47553a79d6795038c510fa8c863e18cc3902
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Thu Aug 22 18:23:30 2024 +0100
+
+    5th commit
+
+M	SolverCG.cpp
+
+commit 299daee47a663510937e4ae69e573bb5b783c35e
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Thu Aug 22 15:50:39 2024 +0100
+
+    4th commit
+
+M	LidDrivenCavity.cpp
+M	SolverCG.cpp
+
+commit 18d5e0a5e0f96d04b80e0a85347a6f55b8ea25a1
+Author: [Jason Zhao] <yz8419@hurricane.ae.ic.ac.uk>
+Date:   Thu Aug 22 15:40:31 2024 +0100
+
+    3nd Commit
+
+M	SolverCG.cpp
+
+commit 30e830540b50acf2f0aa327529c9324e674e368e
+Author: [Jason Zhao] <yz8419@spitfire.ae.ic.ac.uk>
+Date:   Wed Aug 21 13:49:16 2024 +0100
+
+    2nd Commit
+
+M	Makefile
+
+commit d3372910bf9bfa798f47f3bd0c68474ec6aac900
+Author: [Jason Zhao] <yz8419@spitfire.ae.ic.ac.uk>
+Date:   Tue Aug 20 18:20:25 2024 +0100
+
+    1st Commit
+
+A	LidDrivenCavity.cpp
+A	LidDrivenCavity.h
+A	LidDrivenCavitySolver.cpp
+A	Makefile
+A	SolverCG.cpp
+A	SolverCG.h

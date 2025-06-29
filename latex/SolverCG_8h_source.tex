@@ -1,0 +1,68 @@
+\hypertarget{SolverCG_8h_source}{}\doxysection{Solver\+CG.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <mpi.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{classSolverCG}{SolverCG}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{classSolverCG}{SolverCG}}(\textcolor{keywordtype}{int} pNx, \textcolor{keywordtype}{int} pNy, \textcolor{keywordtype}{double} pdx, \textcolor{keywordtype}{double} pdy);}
+\DoxyCodeLine{10     \mbox{\hyperlink{classSolverCG}{\string~SolverCG}}();}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \textcolor{keywordtype}{void} Solve(\textcolor{keywordtype}{double}* b, \textcolor{keywordtype}{double}* x); \textcolor{comment}{//b is vorticity, x is streamfunction}}
+\DoxyCodeLine{13     \textcolor{comment}{//}}
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} rank = 0;}
+\DoxyCodeLine{15     \textcolor{keywordtype}{int} size = 0;}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} dx;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{double} dy;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} Nx;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} Ny;}
+\DoxyCodeLine{21     \textcolor{keywordtype}{double}* r;}
+\DoxyCodeLine{22     \textcolor{keywordtype}{double}* p;}
+\DoxyCodeLine{23     \textcolor{keywordtype}{double}* z;}
+\DoxyCodeLine{24     \textcolor{keywordtype}{double}* t;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} Npts = 81;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} ApplyOperator(\textcolor{keywordtype}{double}* p, \textcolor{keywordtype}{double}* t);}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} Precondition(\textcolor{keywordtype}{double}* p, \textcolor{keywordtype}{double}* t);}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} ImposeBC(\textcolor{keywordtype}{double}* p);}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} probe(\textcolor{keywordtype}{int} K, \textcolor{keywordtype}{int} RANK, \textcolor{keywordtype}{int} k, \textcolor{keywordtype}{int} rank, \textcolor{keywordtype}{double}* x, \textcolor{keywordtype}{double}* t, \textcolor{keywordtype}{double}* p, \textcolor{keywordtype}{int} n, \textcolor{keywordtype}{double}* z, \textcolor{keywordtype}{double} alpha, \textcolor{keywordtype}{double} beta) ;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} subIDXglobal(\textcolor{keywordtype}{int} iSub, \textcolor{keywordtype}{int} rank);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     }
+\DoxyCodeLine{37     \textcolor{comment}{//}}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int}* subGridNumArray = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{39     \textcolor{keywordtype}{int}* subSideNumXArray = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int}* subSideNumYArray = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42   }
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} coords[2];}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} keep[2];}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{int} sideSubCoreNum = 0;}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} subGridNum = 0;}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{int} subSideNum = 0;}
+\DoxyCodeLine{50     \textcolor{keywordtype}{int} subSideNumX = 0;}
+\DoxyCodeLine{51     \textcolor{keywordtype}{int} subSideNumY = 0;}
+\DoxyCodeLine{52     }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     MPI\_Comm mygrid;}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     MPI\_Comm myrowcomm, mycolcomm;}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{int} mygrid\_rank;}
+\DoxyCodeLine{59     \textcolor{comment}{//}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \};}
+\DoxyCodeLine{63 }
+
+\end{DoxyCode}
