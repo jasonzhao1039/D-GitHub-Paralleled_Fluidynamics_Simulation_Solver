@@ -10,7 +10,7 @@ This project simulates the classical lid-driven cavity problem in incompressible
 - **[ic.txt](./ic.txt)**  
   Contains the initial condition of the two-dimensional fluid field.
 
-- **[out.txt](./out.txt)**  
+- **[final.txt](./final.txt)**  
   Contains the simulated fluid field results at the specified time.
 
 ## Usage
